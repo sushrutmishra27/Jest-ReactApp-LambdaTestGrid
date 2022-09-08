@@ -1,6 +1,6 @@
 const { By, until } = require("selenium-webdriver");
 
-const defaultTimeout = 3000;
+const defaultTimeout = 3000; 
 
 const getElementByCss = async (driver, name, timeout = defaultTimeout) => {
 	const el = await driver.wait(until.elementLocated(By.css(name)), timeout);
